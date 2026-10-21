@@ -2,7 +2,7 @@ import numpy as np
 
 def pairwise_distance(X: np.ndarray) -> np.ndarray:
 
-    Y = X[:, None, :] - X[None, :, :]
+    Y = X[:, np.newaxis, :] - X[np.newaxis, :, :]
 
     # raise every element from Y to 2  
     Z = np.float_power(Y, 2)
@@ -15,12 +15,12 @@ def pairwise_distance(X: np.ndarray) -> np.ndarray:
 
 def main() -> None:
     X = np.array([
-        [1, 2, 5],
-        [4, 6, 5],
-        [1, 2, 1],
+        [1, 2],
+        [3, 4],
+        [5, 6],
     ], dtype=float)
 
     D = pairwise_distance(X)
     print(D)
-
+    
 main()
