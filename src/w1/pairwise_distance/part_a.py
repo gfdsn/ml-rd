@@ -8,7 +8,6 @@ def pairwise_distance(X: np.ndarray) -> np.ndarray:
     Z = np.float_power(Y, 2)
 
     # sum every element 
-    # try to understand the changes in the array made by the axis, in the sum
     W = np.sum(Z, axis=2)
 
     # square root everything and return the final array
