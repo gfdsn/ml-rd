@@ -23,6 +23,8 @@ def pairwise_distance(X: np.ndarray) -> np.ndarray:
 
 ## Steps
 
+### Part A
+
 - Used _numpy_ **basic indexing** and **basic slicing** (`X[np.newaxis, :, :]` and `X[:, np.newaxis, :]`) to rearrange  the coordinates inside X
 
 `np.newaxis` adds a new axis in its position in the tuple, increasing the dimension of the result by $1$.
@@ -31,3 +33,5 @@ def pairwise_distance(X: np.ndarray) -> np.ndarray:
 
 When trying to apply operations between two different matrices with different dimensions, _numpy_ "expands" the number of axes of both matrices in order to match their shape.
 $\space$
+
+### Part B

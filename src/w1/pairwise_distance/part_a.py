@@ -21,6 +21,6 @@ def main() -> None:
     ], dtype=float)
 
     D = pairwise_distance(X)
-    print(D)
+    #print(D)
     
 main()
